@@ -1,0 +1,28 @@
+{
+  "name": "C4GenericFilter",
+  "version": "0.1.0",
+  "summary": "A short description of C4GenericFilter.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sr-tune/C4GenericFilter",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "RB": "boyer_romain@carrefour.com"
+  },
+  "source": {
+    "git": "https://github.com/sr-tune/C4GenericFilter.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "C4GenericFilter/Classes/**/*",
+  "resource_bundles": {
+    "Assets": [
+      "Pod/Assets/*.{png, jpg}",
+      "Pod/Assets/**/*.{png, jpg}"
+    ]
+  }
+}
