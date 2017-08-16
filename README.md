@@ -76,8 +76,12 @@ Don't forget to put '[.validator]' filter group at the end of filter to enable f
 
 ## Output of the filter is a dictionary
 
+
+user selection :
 ![Alt text](https://user-images.githubusercontent.com/1142694/29367963-b6f4fcd4-829e-11e7-81c5-299a1a8fb5c3.png?raw=true "Filter in action")
 
+
+output after click on "Filtrer" button
 ```swift
 {
 "banque_selected" = 1;
