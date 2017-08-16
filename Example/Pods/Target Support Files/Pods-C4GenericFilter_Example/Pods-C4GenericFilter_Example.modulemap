@@ -1,0 +1,6 @@
+framework module Pods_C4GenericFilter_Example {
+  umbrella header "Pods-C4GenericFilter_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
