@@ -3,7 +3,6 @@
 //  Carrefour_FR_V2
 //
 //  Created by rboyer on 04/04/2016.
-//  Copyright © 2016 Carrefour. All rights reserved.
 //
 
 import Foundation
