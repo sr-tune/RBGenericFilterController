@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/C4GenericFilter.svg?style=flat)](http://cocoapods.org/pods/C4GenericFilter)
 [![Platform](https://img.shields.io/cocoapods/p/C4GenericFilter.svg?style=flat)](http://cocoapods.org/pods/C4GenericFilter)
 
+![Alt text](https://user-images.githubusercontent.com/1142694/29366641-d881d1dc-829a-11e7-986b-7e35046f24e5.png?raw=true "Filter in action")
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
