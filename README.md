@@ -35,10 +35,16 @@ print(filterParams)
 }
 ```
 
-## Create a filter group, you can tell if item is autoselected or not.
+## Create a filter group, you can tell if item is autoselected or not, you can put an image instead of a text by selecting method with "image" parameter enable.
+
+
 
 ```swift
-var recetteTimeValuesInitial  = [StaticSelectionableItem.init(text : "⏱", output : "1", idFilter: "timer", selected: false),
+StaticSelectionableItem.init(image: <#T##UIImage?#>, text: <#T##String#>, output: <#T##String#>, idFilter: <#T##String#>, selected: <#T##Bool#>)
+
+
+var recetteTimeValuesInitial  = [
+StaticSelectionableItem.init(text : "⏱", output : "1", idFilter: "timer", selected: false),
 StaticSelectionableItem.init(text : "⏱⏱", output : "2", idFilter: "timer", selected: true),
 StaticSelectionableItem.init(text : "⏱⏱⏱", output : "3", idFilter: "timer", selected: false)
 ]

@@ -3,7 +3,6 @@
 //  Carrefour_FR_V2
 //
 //  Created by Lamine NDIAYE on 28/04/16.
-//  Copyright © 2016 Carrefour. All rights reserved.
 //
 
 import UIKit
