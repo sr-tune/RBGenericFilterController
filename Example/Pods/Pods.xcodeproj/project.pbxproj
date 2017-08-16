@@ -18,6 +18,7 @@
 		38B2233107523F5EC542513D664C9FF1 /* Pods-C4GenericFilter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF2F2FA3FB85A25D9E508E298B6C0F6 /* Pods-C4GenericFilter_Tests-dummy.m */; };
 		38E833C3B9190E01B3E1465FECCEFC8C /* FilterGenericDatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BB531280AC28B3BE37F2B781F30B81 /* FilterGenericDatePickerTableViewCell.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		49A2320D874F084DD3E20782B2783F4D /* FilterValidationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A287914A0F2B372EE3900188B36E3D /* FilterValidationCell.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		67ED731D1F448DC60011D57E /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67ED731C1F448DC60011D57E /* images.xcassets */; };
 		68688FC4CDE91AC67132E5FA10E18376 /* FilterMultipleChoiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E8B2FA541F26A91E3486F6D355177B /* FilterMultipleChoiceTableViewCell.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6A8A48CB9CD72197612B7D69527DF0B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		772F1D9486FC1502FFDECF06AAE587C6 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DEB38F58F108CEB9576A895F4B3BB9BE /* Assets.bundle */; };
@@ -61,23 +62,24 @@
 /* Begin PBXFileReference section */
 		043EF9E8FAD78A7452C7EA7EFFD95E45 /* UIFont+C4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIFont+C4.swift"; path = "C4GenericFilter/Classes/UIFont+C4.swift"; sourceTree = "<group>"; };
 		10142279D700C504B104747D468778B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		187A70F5BAA3F5B04C440C81B399C54A /* C4GenericFilter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = C4GenericFilter.modulemap; sourceTree = "<group>"; };
+		187A70F5BAA3F5B04C440C81B399C54A /* C4GenericFilter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = C4GenericFilter.modulemap; sourceTree = "<group>"; };
 		1A921B9F812C6E26E4F7657B27396C92 /* Pods-C4GenericFilter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-C4GenericFilter_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		1E4460835E1B06B0438B63E14C71C5A9 /* Pods-C4GenericFilter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-C4GenericFilter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1F6381AC0D8CF5760513E997B41DEBD5 /* FilterBooleanCellViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FilterBooleanCellViewModel.swift; sourceTree = "<group>"; };
 		21E8DAC9B83017996AA417C441D5DD61 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterCollectionViewCell.swift; path = C4GenericFilter/Classes/FilterCollectionViewCell.swift; sourceTree = "<group>"; };
 		300315E66F527636C714C8B4611A6C39 /* GenericMultiChoiceTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GenericMultiChoiceTableViewController.swift; sourceTree = "<group>"; };
-		33BB02B6A1DF45D27CA7458CE02C74D7 /* C4GenericFilter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = C4GenericFilter.framework; path = C4GenericFilter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33BB02B6A1DF45D27CA7458CE02C74D7 /* C4GenericFilter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = C4GenericFilter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3406F9A71C6C3FB3EDE1929D4B713EB7 /* Pods-C4GenericFilter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-C4GenericFilter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		352DCA51F224E3BEB8FDB169FDD7A240 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35E8B2FA541F26A91E3486F6D355177B /* FilterMultipleChoiceTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FilterMultipleChoiceTableViewCell.swift; sourceTree = "<group>"; };
-		48D877EC33CFE3C25317BC3A8094A5C0 /* Pods-C4GenericFilter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-C4GenericFilter_Example.modulemap"; sourceTree = "<group>"; };
+		48D877EC33CFE3C25317BC3A8094A5C0 /* Pods-C4GenericFilter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-C4GenericFilter_Example.modulemap"; sourceTree = "<group>"; };
 		4B77684963C67E11117B430F73D295C0 /* FilterGenericCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FilterGenericCell.swift; sourceTree = "<group>"; };
 		538720AA07BCE1E57A665568E9B2B1B1 /* C4GenericFilter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "C4GenericFilter-umbrella.h"; sourceTree = "<group>"; };
 		53BB531280AC28B3BE37F2B781F30B81 /* FilterGenericDatePickerTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FilterGenericDatePickerTableViewCell.swift; sourceTree = "<group>"; };
 		5F175C8A2459C459ABA82868B6421CB8 /* Pods-C4GenericFilter_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-C4GenericFilter_Tests-resources.sh"; sourceTree = "<group>"; };
 		63D485BE185F2A9F491F50C5C58ABD28 /* UIButton+C4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+C4.swift"; path = "C4GenericFilter/Classes/UIButton+C4.swift"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67ED731C1F448DC60011D57E /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		6BEF9E70ABD3288BF4756923A88DECB1 /* C4GenericFilter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = C4GenericFilter.xcconfig; sourceTree = "<group>"; };
 		736DED0D36C3F6562B225439501159FA /* Pods-C4GenericFilter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-C4GenericFilter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		7386BD0BCF40DE0455C697BA32B29D04 /* Pods-C4GenericFilter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-C4GenericFilter_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,15 +89,15 @@
 		83BFF6F231319C5B2F472636B93B299A /* Pods-C4GenericFilter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-C4GenericFilter_Example-dummy.m"; sourceTree = "<group>"; };
 		8769011914C1FED6341ACBF23F7F37A3 /* FilterThemeConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FilterThemeConfiguration.swift; sourceTree = "<group>"; };
 		8E1A45508EF15EA3DD10D4DACFD04B6B /* Pods-C4GenericFilter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-C4GenericFilter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		90E31D5E3C298EAA32304CF84C5EEEC7 /* Pods_C4GenericFilter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_C4GenericFilter_Tests.framework; path = "Pods-C4GenericFilter_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E31D5E3C298EAA32304CF84C5EEEC7 /* Pods_C4GenericFilter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_C4GenericFilter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9238C9FA5A1E95846EADAEC2A2E9655F /* FilterGenericTableViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FilterGenericTableViewModel.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		98C17F5F72EA20102FA7B1985C6944C6 /* FilterGenericTableViewController+ValidatorDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FilterGenericTableViewController+ValidatorDelegates.swift"; sourceTree = "<group>"; };
 		9AE99115209E1B9670546BAAF76771FE /* FilterMultipleChoiceTableViewCell+UICollectionViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FilterMultipleChoiceTableViewCell+UICollectionViewDelegates.swift"; sourceTree = "<group>"; };
 		9DECE2A045645EBD8F859C869C1C70E4 /* C4GenericFilter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "C4GenericFilter-prefix.pch"; sourceTree = "<group>"; };
 		A420A65AB01F4BE7F8ACC5F5D3526C68 /* Pods-C4GenericFilter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-C4GenericFilter_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A4A287914A0F2B372EE3900188B36E3D /* FilterValidationCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FilterValidationCell.swift; sourceTree = "<group>"; };
-		A5B30DA92F5AE4C4A015A86F765765B7 /* Pods_C4GenericFilter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_C4GenericFilter_Example.framework; path = "Pods-C4GenericFilter_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5B30DA92F5AE4C4A015A86F765765B7 /* Pods_C4GenericFilter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_C4GenericFilter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6890271328E9CBDDA2A63B3FA33727E /* FilterGenericTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FilterGenericTableViewController.swift; sourceTree = "<group>"; };
 		A8CB9B66E36910697EA4C3D0FEC909C9 /* Pods-C4GenericFilter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-C4GenericFilter_Tests-umbrella.h"; sourceTree = "<group>"; };
 		AFC2F419A1F675414987C01BDEADBDDC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,11 +109,11 @@
 		D28DD36600F2A3980C853BA0CCF5DDEE /* FilterBooleanTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FilterBooleanTableViewCell.swift; sourceTree = "<group>"; };
 		D9182C6669D8993BEA7059BFCE9A2E86 /* Pods-C4GenericFilter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-C4GenericFilter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DCC7F4323E813FE8EE1762908C9A6B19 /* ResourceBundle-Assets-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Assets-Info.plist"; sourceTree = "<group>"; };
-		DEB38F58F108CEB9576A895F4B3BB9BE /* Assets.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Assets.bundle; path = Assets.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEB38F58F108CEB9576A895F4B3BB9BE /* Assets.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assets.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84A481CA68C32D78C434E857CDBFCB3 /* FilterCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		E8AC03290178D7D562E3D289EF38E2BA /* Pods-C4GenericFilter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-C4GenericFilter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F62123563B2E088DC3D0CADD39CCB7C9 /* UIColor+C4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+C4.swift"; path = "C4GenericFilter/Classes/UIColor+C4.swift"; sourceTree = "<group>"; };
-		F811C7A8202A1831240CA2F650548204 /* Pods-C4GenericFilter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-C4GenericFilter_Tests.modulemap"; sourceTree = "<group>"; };
+		F811C7A8202A1831240CA2F650548204 /* Pods-C4GenericFilter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-C4GenericFilter_Tests.modulemap"; sourceTree = "<group>"; };
 		F990D2169FB30E0B110A2D1623EE36CA /* SearchParamOutputModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchParamOutputModel.swift; sourceTree = "<group>"; };
 		FDD6C72DF9198F81FC31CF79ED789649 /* C4GenericFilter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "C4GenericFilter-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,7 +163,6 @@
 				8769011914C1FED6341ACBF23F7F37A3 /* FilterThemeConfiguration.swift */,
 				F990D2169FB30E0B110A2D1623EE36CA /* SearchParamOutputModel.swift */,
 			);
-			name = viewModels;
 			path = viewModels;
 			sourceTree = "<group>";
 		};
@@ -195,7 +196,6 @@
 				9AE99115209E1B9670546BAAF76771FE /* FilterMultipleChoiceTableViewCell+UICollectionViewDelegates.swift */,
 				A4A287914A0F2B372EE3900188B36E3D /* FilterValidationCell.swift */,
 			);
-			name = cell;
 			path = cell;
 			sourceTree = "<group>";
 		};
@@ -252,7 +252,6 @@
 				98C17F5F72EA20102FA7B1985C6944C6 /* FilterGenericTableViewController+ValidatorDelegates.swift */,
 				300315E66F527636C714C8B4611A6C39 /* GenericMultiChoiceTableViewController.swift */,
 			);
-			name = viewController;
 			path = viewController;
 			sourceTree = "<group>";
 		};
@@ -269,7 +268,6 @@
 			children = (
 				C6929FDEB48B7FDE74E478DA5EF9F3DA /* FilterCollectionViewCell.xib */,
 			);
-			name = UI;
 			path = UI;
 			sourceTree = "<group>";
 		};
@@ -320,6 +318,7 @@
 		EF2ACC4998D3D1FE10E17203DC90AADA /* C4GenericFilter */ = {
 			isa = PBXGroup;
 			children = (
+				67ED731C1F448DC60011D57E /* images.xcassets */,
 				21E8DAC9B83017996AA417C441D5DD61 /* FilterCollectionViewCell.swift */,
 				63D485BE185F2A9F491F50C5C58ABD28 /* UIButton+C4.swift */,
 				78C743537F5CB93373264DC430EDA199 /* UIButton+Rounded.swift */,
@@ -469,6 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				772F1D9486FC1502FFDECF06AAE587C6 /* Assets.bundle in Resources */,
+				67ED731D1F448DC60011D57E /* images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
