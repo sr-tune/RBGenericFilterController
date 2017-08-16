@@ -22,33 +22,54 @@ it, simply add the following line to your Podfile:
 pod "C4GenericFilter"
 ```
 
-## Create the filter
+## implement delegates method in your viewController that show the filter
+
+```ruby
+extension ViewController : FilterGenericTableViewDelegate {
+
+func filterAdded(_ filterParams : NSDictionary) {
+print(filterParams)
+}
+}
+```
+
+## Create a filterViewController
+
+Note that filter should be embedded in navigation controller to enable cancel action on filter (dismiss)
 
 ```ruby
 func initFilterViewController() {
 filterTableViewController = FilterGenericTableViewController.init(style : UITableViewStyle.grouped)
 filterTableViewController?.config = configParameters
 filterTableViewController?.delegate = self
-filterTableViewController?.title = "Filtres"
-filterTableViewController?.theme = selectedElement.theme()
-
 
 filterVC = UINavigationController.init(rootViewController: filterTableViewController!)
+
+navigationController?.present(filterVC, animated: true, completion: nil)
+
 }
 ```
 
-create an filter group
+create a filter group
+
+```ruby
+var recetteTimeValuesInitial  = [StaticSelectionableItem.init(text : "⏱", output : "1", idFilter: "timer", selected: false),
+StaticSelectionableItem.init(text : "⏱⏱", output : "2", idFilter: "timer", selected: true),
+StaticSelectionableItem.init(text : "⏱⏱⏱", output : "3", idFilter: "timer", selected: false)
+]
+```
+
+
+add filter group in filter configuration
 
 ```ruby
 self.configParameters = [
 [.custom(type : FilterSelectionType.radio, values : self.recetteTimeValuesInitial, title : "temps de préparation")],
-[.custom(type : FilterSelectionType.multi, values : self.recetteBudgetValuesInitial, title : "budget")],
-[.custom(type : FilterSelectionType.radio, values : self.recetteDifficultyValuesInitial, title : "difficulté"),
-.custom(type: .swwitch, values: [StaticSelectionableItem.init(text: "mode expert", output: "true", idFilter: "mode expert_selected", selected: true)], title:"" )],
 [.validator]
 ]
 ```
 
+Don't forget to put '[.validator]' filter group at the end of filter to enable filter actions
 
 ## Author
 
