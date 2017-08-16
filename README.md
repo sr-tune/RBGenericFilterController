@@ -22,7 +22,7 @@ it, simply add the following line to your Podfile:
 pod "C4GenericFilter"
 ```
 
-## implement delegates method in your viewController that show the filter
+## Implements delegate's method in your viewController to get user's selection 
 
 ```ruby
 extension ViewController : FilterGenericTableViewDelegate {
@@ -33,9 +33,27 @@ print(filterParams)
 }
 ```
 
-## Create a filterViewController
+## Create a filter group, you can tell if item is autoselected or not.
 
-Note that filter should be embedded in navigation controller to enable cancel action on filter (dismiss)
+```ruby
+var recetteTimeValuesInitial  = [StaticSelectionableItem.init(text : "⏱", output : "1", idFilter: "timer", selected: false),
+StaticSelectionableItem.init(text : "⏱⏱", output : "2", idFilter: "timer", selected: true),
+StaticSelectionableItem.init(text : "⏱⏱⏱", output : "3", idFilter: "timer", selected: false)
+]
+```
+
+## add filter group in filter configuration
+
+```ruby
+self.configParameters = [
+[.custom(type : FilterSelectionType.radio, values : self.recetteTimeValuesInitial, title : "temps de préparation")],
+[.validator]
+]
+```
+
+## Create a filterViewController and set the config property and delegate
+
+Note that the filter should be embedded in navigation controller to enable cancel action on filter (dismiss)
 
 ```ruby
 func initFilterViewController() {
@@ -50,26 +68,7 @@ navigationController?.present(filterVC, animated: true, completion: nil)
 }
 ```
 
-create a filter group
-
-```ruby
-var recetteTimeValuesInitial  = [StaticSelectionableItem.init(text : "⏱", output : "1", idFilter: "timer", selected: false),
-StaticSelectionableItem.init(text : "⏱⏱", output : "2", idFilter: "timer", selected: true),
-StaticSelectionableItem.init(text : "⏱⏱⏱", output : "3", idFilter: "timer", selected: false)
-]
-```
-
-
-add filter group in filter configuration
-
-```ruby
-self.configParameters = [
-[.custom(type : FilterSelectionType.radio, values : self.recetteTimeValuesInitial, title : "temps de préparation")],
-[.validator]
-]
-```
-
-Don't forget to put '[.validator]' filter group at the end of filter to enable filter actions
+Don't forget to put '[.validator]' filter group at the end of filter to enable filter actions. // Next improvment
 
 ## Author
 
