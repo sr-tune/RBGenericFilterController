@@ -42,7 +42,7 @@ StaticSelectionableItem.init(text : "⏱⏱⏱", output : "3", idFilter: "timer"
 ]
 ```
 
-## add filter group in filter configuration
+## add filter group in your filter configuration
 
 ```ruby
 self.configParameters = [
@@ -50,6 +50,7 @@ self.configParameters = [
 [.validator]
 ]
 ```
+FilterSelection enum will guide you in wich kind of filter do you want in your filter group (radio buttons, multiselection, or boolean selection)
 
 ## Create a filterViewController and set the config property and delegate
 
