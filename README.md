@@ -26,7 +26,7 @@ pod "C4GenericFilter"
 
 ## Implements delegate's method in your viewController to get user's selection 
 
-```ruby
+```swift
 extension ViewController : FilterGenericTableViewDelegate {
 
 func filterAdded(_ filterParams : NSDictionary) {
@@ -37,7 +37,7 @@ print(filterParams)
 
 ## Create a filter group, you can tell if item is autoselected or not.
 
-```ruby
+```swift
 var recetteTimeValuesInitial  = [StaticSelectionableItem.init(text : "⏱", output : "1", idFilter: "timer", selected: false),
 StaticSelectionableItem.init(text : "⏱⏱", output : "2", idFilter: "timer", selected: true),
 StaticSelectionableItem.init(text : "⏱⏱⏱", output : "3", idFilter: "timer", selected: false)
@@ -46,7 +46,7 @@ StaticSelectionableItem.init(text : "⏱⏱⏱", output : "3", idFilter: "timer"
 
 ## add filter group in your filter configuration
 
-```ruby
+```swift
 self.configParameters = [
 [.custom(type : FilterSelectionType.radio, values : self.recetteTimeValuesInitial, title : "temps de préparation")],
 [.validator]
@@ -58,7 +58,7 @@ FilterSelection enum will guide you in wich kind of filter do you want in your f
 
 Note that the filter should be embedded in navigation controller to enable cancel action on filter (dismiss)
 
-```ruby
+```swift
 func initFilterViewController() {
 filterTableViewController = FilterGenericTableViewController.init(style : UITableViewStyle.grouped)
 filterTableViewController?.config = configParameters
